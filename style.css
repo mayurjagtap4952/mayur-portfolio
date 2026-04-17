@@ -1,0 +1,46 @@
+body {
+  scroll-behavior: smooth;
+  font-family: Arial;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cards */
+.card {
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Skills */
+.skill:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Projects */
+.project:hover {
+  transform: translateY(-10px);
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
