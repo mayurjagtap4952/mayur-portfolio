@@ -1,0 +1,101 @@
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --dark-bg: #1e1e1e;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.text-gradient {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom Buttons */
+.btn-primary-custom {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4);
+  color: white;
+}
+
+/* Project Cards */
+.bg-light-gradient {
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.project-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+.badge {
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+
+.bg-soft-primary { background: #e0e7ff; }
+.bg-soft-success { background: #dcfce7; }
+
+/* Contact Form */
+.custom-input {
+  background: #f3f4f6;
+  border: 1px solid transparent;
+  padding: 14px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.custom-input:focus {
+  background: white;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  background: rgba(255,255,255,0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: #6366f1;
+  color: white;
+  transform: rotate(360deg);
+}
